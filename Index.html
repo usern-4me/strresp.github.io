@@ -52,4 +52,91 @@
 </div>
 
 </body>
+
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: rgb(3, 133, 89);
+    color: white;
+}
+
+.NBar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(31, 31, 31);
+}
+
+.NBar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.NBar a:hover {
+    background-color: #dddddd;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+.left {
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+.right {
+    background-color: white;
+    padding: 20px;
+}
+
+.obr {
+    background-color: #9c9999;
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #d8d8d8;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .NBar {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 </html>
